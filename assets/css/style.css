@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Poiret+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 
 
 
 /*---------------------------------------------------Header colours*/
+
+.bg-color-personal-info{
+    background-color: #e7e8d6;
+}
+
 
 .bg-color-name-tile {
     background-color: #cc9778;
@@ -18,7 +23,7 @@
 }
 
 .ui-menu-color-resume {
-    background-color: #818a60;
+    background-color: #8d9071;
 }
 
 .ui-menu-color-contact {
@@ -29,6 +34,9 @@
     background-color: #d8ae9f;
 }
 
+.bg-color-work-history {
+    background-color: #8d9071;
+}
 /*---------------------------------------------------Special paddings, margins and text*/
 
 h1,
@@ -43,7 +51,7 @@ h4 {
 }
 
 .general-sub {
-    font-family: "Poiret one", sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #fafafa;
 }
@@ -62,8 +70,10 @@ h4 {
     float: none;
 }
 
+
+.history-heading,
 .section-heading {
-    font-family: "Poiret one", sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
@@ -91,7 +101,7 @@ header {
 }
 
 .name {
-    font-family: "Poiret one", sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
@@ -100,7 +110,7 @@ header {
 
 .title {
     font-family: "Roboto", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
@@ -213,4 +223,108 @@ footer {
 
 #footer-details {
     padding: 20px;
+}
+
+/*---------------------------------------------------Three reasons*/
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #c18550;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+
+/*---------------------------------------------------Personal info*/
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
+}
+
+/*---------------------------------------------------Skills*/
+
+.progress{
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+    line-height: unset;
+
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+/*---------------------------------------------------Work History*/
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 43em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
 }
